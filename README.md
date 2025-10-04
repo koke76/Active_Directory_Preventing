@@ -31,6 +31,7 @@ Give it some privileges so it looks interesting.
 Assign it an SPN (for example, something like an IIS or SQL service).
 
 If anyone requests a ticket for this honeypot account, that’s an immediate red flag.
+![Honeypot overview](./images/honeypot1.webp)
 
  AS-REPRoasting
 
@@ -57,7 +58,7 @@ Make sure it has some login history after the password change (so it doesn’t l
 Give it a few privileges to make it more believable.
 
 If a TGT request ever shows up for this honeypot, that’s probably someone testing or attacking your AD.
-
+![Honeypot overview](./images/honeypot2.webp)
 DCSync
 
 DCSync is a more advanced attack — it abuses the normal replication feature between domain controllers. Basically, it lets an attacker impersonate a DC and request all the password hashes.
